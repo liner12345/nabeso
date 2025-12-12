@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜名古屋のハウスクリーニング ロナロナクリーニング</title>
+    <meta name="description" content="ロナロナクリーニングへのお問い合わせ・お見積り依頼はこちらから。お電話、フォームにて受け付けております。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.1);
+        }
+
+        .required::after {
+            content: '*';
+            color: #ef4444;
+            margin-left: 0.2rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="Rona Rona Logo" style="height: 50px;">
+                Rona Rona</a>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="services.html">サービス一覧</a></li>
+                    <li><a href="pricing.html">料金表</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="contact.html" class="text-accent">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 40vh;">
+        <div class="container hero-content">
+            <h1>お問い合わせ</h1>
+            <p>ご相談・お見積もりは無料です。<br>お気軽にご連絡ください。</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container" style="max-width: 800px;">
+
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">お電話でのお問い合わせ</h2>
+                <p>お急ぎの場合はお電話ください。</p>
+                <a href="tel:09060953244"
+                    style="display: block; font-size: 2rem; font-weight: 700; color: var(--color-primary); margin: 1rem 0;">090-6095-3244</a>
+                <p style="color: var(--color-text-light);">（9:00〜18:00 ※時間外も相談可）</p>
+            </div>
+
+            <div style="background: #f8fafc; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h2 class="text-center" style="margin-bottom: 2rem;">お問い合わせフォーム</h2>
+
+                <form action="#" method="POST"> <!-- Placeholder action -->
+                    <div class="form-group">
+                        <label class="form-label required">お名前</label>
+                        <input type="text" class="form-control" name="name" required placeholder="例：山田 太郎">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">連絡先（メールアドレス）</label>
+                        <input type="email" class="form-control" name="email" required
+                            placeholder="例：example@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">連絡先（電話番号）</label>
+                        <input type="tel" class="form-control" name="phone" required placeholder="例：090-1234-5678">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">ご住所（市区町村まで）</label>
+                        <input type="text" class="form-control" name="address" required placeholder="例：名古屋市中区">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">ご希望メニュー（複数選択可）</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="menu" value="aircon"> エアコン</label>
+                            <label><input type="checkbox" name="menu" value="water"> 水回りセット</label>
+                            <label><input type="checkbox" name="menu" value="vacancy"> 空室/在室クリーニング</label>
+                            <label><input type="checkbox" name="menu" value="window"> 窓・サッシ</label>
+                            <label><input type="checkbox" name="menu" value="floor"> 床・フロア</label>
+                            <label><input type="checkbox" name="menu" value="business"> 店舗・オフィス</label>
+                            <label><input type="checkbox" name="menu" value="other"> その他</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">駐車場の有無</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="parking" value="yes"> あり</label>
+                            <label><input type="radio" name="parking" value="no"> なし（コインP実費了承）</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">希望日時（第3希望まで）</label>
+                        <textarea class="form-control" name="dates" rows="3"
+                            placeholder="例：&#10;1. ◯月◯日 午前&#10;2. ◯月◯日 午後&#10;3. いつでも可"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">汚れ・ご要望・機種情報など</label>
+                        <textarea class="form-control" name="message" rows="5"
+                            placeholder="エアコンの型番やお掃除機能の有無、特に気になる汚れの場所などをご記入ください。"></textarea>
+                    </div>
+
+                    <div class="form-group" style="text-align: center;">
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; padding: 1rem; font-size: 1.1rem;">送信する</button>
+                    </div>
+                </form>
+
+                <div class="note-box" style="margin-top: 2rem; font-size: 0.9rem;">
+                    <strong>【ご確認】</strong>
+                    <ul style="list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>追加料金が発生する可能性がある場合は、作業前に必ずご説明します。</li>
+                        <li>駐車場がない場合はコインパーキング代の実費をご負担いただきます。</li>
+                        <li>空き状況により、時間外のご相談も可能です。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>ロナロナクリーニング</h3>
+                    <p>東海三県（愛知・岐阜・三重）対応のプロ清掃</p>
+                </div>
+                <div>
+                    <h4>メニュー</h4>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="services.html">サービス一覧</a></li>
+                        <li><a href="pricing.html">料金表</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Rona Rona Cleaning. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
